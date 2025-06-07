@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国大学生数学竞赛</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 在body结束标签前添加 -->
+
+</head>
+<body>
+    <div class="page-loader">
+        <div class="loader-circle"></div>
+    </div>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="数学竞赛logo">
+            <span class="logo-text">全国大学生<br>数学竞赛</span>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-trophy"></i> 竞赛信息 <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#"><i class="fas fa-bullhorn"></i> 最新公告</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> 赛事安排</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> 竞赛规则</a></li>
+                    <li><a href="#"><i class="fas fa-edit"></i> 报名指南</a></li>
+                    <li><a href="#"><i class="fas fa-medal"></i> 奖项设置</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-book"></i> 学习资源 <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#"><i class="fas fa-history"></i> 历年真题</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> 在线课程</a></li>
+                    <li><a href="#"><i class="fas fa-book-reader"></i> 备赛资料</a></li>
+                    <li><a href="#"><i class="fas fa-laptop-code"></i> 在线练习</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> 视频讲解</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-user-graduate"></i> 选手空间 <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#"><i class="fas fa-user-circle"></i> 个人中心</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> 成绩查询</a></li>
+                    <li><a href="#"><i class="fas fa-certificate"></i> 证书下载</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i> 参赛记录</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> 我的收藏</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-comments"></i> 交流社区 <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#"><i class="fas fa-users"></i> 讨论区</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> 在线答疑</a></li>
+                    <li><a href="#"><i class="fas fa-share-alt"></i> 经验分享</a></li>
+                    <li><a href="#"><i class="fas fa-lightbulb"></i> 解题思路</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="user-actions">
+            <div class="search-box">
+                <input type="text" placeholder="搜索...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> 登录</a>
+            <a href="#" class="register-btn"><i class="fas fa-user-plus"></i> 注册</a>
+        </div>
+    </nav>
+
+    <!-- 添加公告栏 -->
+    <div class="announcement-bar">
+        <i class="fas fa-bullhorn"></i>
+        <div class="announcement-content">
+            <div class="announcement-text">
+                2024年全国大学生数学竞赛报名开始啦！截止日期：2024年3月31日
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- 轮播图 -->
+        <section class="section slider-section">
+            <div class="container">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active">
+                            <img src="images/slide1.jpg" alt="竞赛现场">
+                            <div class="slide-content">
+                                <h2>2024全国大学生数学竞赛</h2>
+                                <p>挑战自我，突破极限</p>
+                                <a href="#" class="slide-btn">立即报名</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide2.jpg" alt="获奖现场">
+                            <div class="slide-content">
+                                <h2>2023年度颁奖典礼</h2>
+                                <p>见证数学之星的诞生</p>
+                                <a href="#" class="slide-btn">查看回顾</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide3.jpg" alt="备赛培训">
+                            <div class="slide-content">
+                                <h2>专业备赛课程</h2>
+                                <p>名师指导，系统备赛</p>
+                                <a href="#" class="slide-btn">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                    <div class="slider-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 添加比赛倒计时 -->
+        <section class="section countdown-section">
+            <div class="container">
+                <div class="countdown-section">
+                    <h2>距离比赛还有</h2>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <span>天</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <span>时</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <span>分</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <span>秒</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快速入口区域 -->
+        <section class="section quick-access-section">
+            <div class="container">
+                <div class="quick-access">
+                    <div class="quick-access-item">
+                        <i class="fas fa-edit"></i>
+                        <h3>在线报名</h3>
+                        <p>快速报名参加比赛</p>
+                    </div>
+                    <div class="quick-access-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>模拟练习</h3>
+                        <p>在线模拟考试训练</p>
+                    </div>
+                    <div class="quick-access-item">
+                        <i class="fas fa-medal"></i>
+                        <h3>成绩查询</h3>
+                        <p>查看历届比赛成绩</p>
+                    </div>
+                    <div class="quick-access-item">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>在线答疑</h3>
+                        <p>专业教师在线解答</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab栏内容 -->
+        <section class="section tab-section">
+            <div class="container">
+                <div class="tab-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="news">
+                            <i class="fas fa-newspaper"></i>最新动态
+                        </button>
+                        <button class="tab-btn" data-tab="rankings">
+                            <i class="fas fa-trophy"></i>排行榜
+                        </button>
+                        <button class="tab-btn" data-tab="resources">
+                            <i class="fas fa-book"></i>学习资料
+                        </button>
+                        <button class="tab-btn" data-tab="experience">
+                            <i class="fas fa-share-alt"></i>经验分享
+                        </button>
+                    </div>
+                    <div class="tab-content">
+                        <!-- 最新动态 -->
+                        <div id="news" class="tab-pane active">
+                            <div class="news-card card">
+                                <div class="news-header">
+                                    <span class="news-tag">重要通知</span>
+                                    <h3 class="news-title">2024年全国大学生数学竞赛报名通道开启</h3>
+                                    <div class="news-meta">
+                                        <span><i class="far fa-calendar"></i>2024-02-28</span>
+                                        <span><i class="far fa-eye"></i>2,456 阅读</span>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    2024年全国大学生数学竞赛报名工作现已正式启动。本次比赛将设置高等数学、工程数学、数学建模三个类别...
+                                </div>
+                                <div class="news-footer">
+                                    <div class="news-tags">
+                                        <span class="tag">竞赛通知</span>
+                                        <span class="tag">报名</span>
+                                    </div>
+                                    <a href="#" class="read-more-btn">
+                                        阅读详情 <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="news-card card">
+                                <div class="news-header">
+                                    <span class="news-tag">赛事动态</span>
+                                    <h3 class="news-title">2023年度颁奖典礼圆满落幕</h3>
+                                    <div class="news-meta">
+                                        <span><i class="far fa-calendar"></i>2024-01-15</span>
+                                        <span><i class="far fa-eye"></i>1,892 阅读</span>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    2023年全国大学生数学竞赛颁奖典礼于北京大学隆重举行，来自全国各地的获奖选手齐聚一堂...
+                                </div>
+                                <div class="news-footer">
+                                    <div class="news-tags">
+                                        <span class="tag">颁奖典礼</span>
+                                        <span class="tag">获奖名单</span>
+                                    </div>
+                                    <a href="#" class="read-more-btn">
+                                        阅读详情 <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 排行榜 -->
+                        <div id="rankings" class="tab-pane">
+                            <div class="ranking-card card">
+                                <div class="ranking-header">
+                                    <h3><i class="fas fa-crown"></i>2023年度总排行榜</h3>
+                                    <p>截至2024年2月28日</p>
+                                </div>
+                                <div class="ranking-list">
+                                    <div class="rank-item">
+                                        <div class="rank-medal gold">
+                                            <i class="fas fa-medal"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="rank-info">
+                                            <div class="rank-name">张明</div>
+                                            <div class="rank-school">清华大学</div>
+                                            <div class="rank-department">数学系</div>
+                                        </div>
+                                        <div class="rank-score">98.5分</div>
+                                    </div>
+                                    <!-- 更多排名项... -->
+                                </div>
+                                <div class="ranking-footer">
+                                    <a href="#" class="view-all-btn">查看完整排行 <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 学习资料 -->
+                        <div id="resources" class="tab-pane">
+                            <div class="resource-card card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="resource-content">
+                                    <div class="resource-type">历年真题</div>
+                                    <h3 class="resource-title">2023年全国大学生数学竞赛真题及详解</h3>
+                                    <p class="resource-desc">
+                                        包含完整试题、标准答案及详细解析，由资深教师团队编写...
+                                    </p>
+                                    <div class="resource-meta">
+                                        <div class="meta-info">
+                                            <span><i class="far fa-file-pdf"></i>PDF文档</span>
+                                            <span><i class="fas fa-download"></i>2,341次下载</span>
+                                        </div>
+                                        <a href="#" class="download-btn">
+                                            立即下载 <i class="fas fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 更多资源卡片... -->
+                        </div>
+
+                        <!-- 经验分享 -->
+                        <div id="experience" class="tab-pane">
+                            <div class="experience-card card">
+                                <div class="author-info">
+                                    <img src="images/avatar1.jpg" alt="作者头像" class="author-avatar">
+                                    <div class="author-details">
+                                        <div class="author-name">李明远</div>
+                                        <div class="author-title">2023年金牌得主 | 北京大学</div>
+                                    </div>
+                                    <button class="follow-btn">
+                                        <i class="fas fa-plus"></i>关注
+                                    </button>
+                                </div>
+                                <div class="experience-content">
+                                    <h3 class="experience-title">我的数学竞赛备赛心得</h3>
+                                    <p class="experience-text">
+                                        在备战2023年全国大学生数学竞赛的过程中，我总结出了一些有效的学习方法和备考策略...
+                                    </p>
+                                    <div class="experience-tags">
+                                        <span class="tag">备赛经验</span>
+                                        <span class="tag">学习方法</span>
+                                        <span class="tag">时间管理</span>
+                                    </div>
+                                </div>
+                                <div class="experience-footer">
+                                    <div class="interaction-stats">
+                                        <span class="stat"><i class="far fa-heart"></i>328</span>
+                                        <span class="stat"><i class="far fa-comment"></i>45</span>
+                                        <span class="stat"><i class="far fa-bookmark"></i>156</span>
+                                    </div>
+                                    <a href="#" class="read-more-btn">
+                                        阅读全文 <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 更多经验分享卡片... -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 添加数据统计区域 -->
+    <div class="statistics-section">
+        <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <div class="stat-number">50,000+</div>
+            <div class="stat-label">参赛选手</div>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-university"></i>
+            <div class="stat-number">985</div>
+            <div class="stat-label">参赛院校</div>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-award"></i>
+            <div class="stat-number">1,500+</div>
+            <div class="stat-label">获奖选手</div>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <div class="stat-number">200+</div>
+            <div class="stat-label">特聘专家</div>
+        </div>
+    </div>
+
+    <!-- 添加合作伙伴展示 -->
+    <div class="partners-section">
+        <h2>合作伙伴</h2>
+        <div class="partners-grid">
+            <!-- 这里放置合作院校或机构的logo -->
+        </div>
+    </div>
+
+    <!-- 添加页脚 -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>全国大学生数学竞赛组委会</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#">竞赛章程</a></li>
+                    <li><a href="#">历届试题</a></li>
+                    <li><a href="#">培训课程</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p><i class="fas fa-phone"></i> 400-123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> 北京市海淀区XX路XX号</p>
+                <p><i class="fas fa-envelope"></i> contact@mathcompetition.cn</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 全国大学生数学竞赛组委会 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 

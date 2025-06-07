@@ -1,0 +1,263 @@
+/* 基础样式设置 */
+:root {
+    --gradient-primary: linear-gradient(135deg, #4F46E5, #2563EB);
+    --gradient-hover: linear-gradient(135deg, #4338CA, #1D4ED8);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 页面背景 */
+.auth-page {
+    min-height: 100vh;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-page::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: url('../images/pattern.svg') repeat;
+    opacity: 0.05;
+    animation: backgroundMove 60s linear infinite;
+}
+
+/* 容器样式 */
+.auth-container {
+    width: 100%;
+    max-width: 520px;
+    position: relative;
+    z-index: 1;
+}
+
+.auth-box {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: var(--shadow-lg);
+    animation: slideUpFade 0.6s ease-out;
+}
+
+/* 头部样式 */
+.auth-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: var(--transition-all);
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.auth-logo {
+    width: 90px;
+    height: auto;
+}
+
+.auth-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.auth-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* 表单部分样式 */
+.form-section {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-all);
+}
+
+.form-section:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.input-group {
+    background: #F3F4F6;
+    border-radius: 12px;
+    padding: 0.8rem 1.2rem;
+    transition: var(--transition-all);
+}
+
+.input-group:focus-within {
+    background: white;
+    box-shadow: 0 0 0 2px #4F46E5;
+}
+
+.input-group i {
+    color: #6B7280;
+    font-size: 1.2rem;
+    width: 24px;
+}
+
+.input-group input {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+}
+
+/* 验证码按钮 */
+.send-code-btn {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+    transition: var(--transition-all);
+}
+
+.send-code-btn:hover:not(:disabled) {
+    background: var(--gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.3);
+}
+
+/* 密码强度指示器 */
+.password-strength {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #F9FAFB;
+    border-radius: 10px;
+}
+
+.strength-bars {
+    display: flex;
+    gap: 6px;
+    margin-top: 0.5rem;
+}
+
+.strength-bars span {
+    height: 5px;
+    flex: 1;
+    border-radius: 3px;
+    transition: var(--transition-all);
+}
+
+/* 提交按钮 */
+.auth-btn {
+    background: var(--gradient-primary);
+    color: white;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+    transition: var(--transition-all);
+}
+
+.auth-btn:hover {
+    background: var(--gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+}
+
+/* 用户协议样式 */
+.terms-group {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #F9FAFB;
+    border-radius: 12px;
+}
+
+.checkbox-label {
+    gap: 1rem;
+}
+
+.checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #D1D5DB;
+}
+
+.checkbox-label input:checked + .checkbox-custom {
+    background: var(--gradient-primary);
+    border: none;
+}
+
+/* 页脚样式 */
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #6B7280;
+    font-size: 1rem;
+}
+
+.auth-footer a {
+    color: #4F46E5;
+    font-weight: 600;
+    transition: var(--transition-all);
+}
+
+.auth-footer a:hover {
+    color: #4338CA;
+    text-decoration: none;
+}
+
+/* 动画效果 */
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundMove {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-50%, -50%); }
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+    .auth-box {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .auth-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-section {
+        padding: 1.2rem;
+    }
+
+    .input-group {
+        padding: 0.6rem 1rem;
+    }
+
+    .send-code-btn {
+        padding: 0.6rem 1rem;
+    }
+}
